@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif, arial;
+}
+
+.container {
+    max-width: 1440px;
+    margin: auto;
+}
+
+nav {
+    background-color: #303030;
+    height: 100px;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    padding: 0 50px;
+}
+
+.nav-icon {
+    width:60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;    
+}
+
+.nav-icon img {
+    width:100%;
+    height: 100%;
+    color: #FFFFFF;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-menu li {
+    display: inline-block;
+    margin-left: 60px; 
+    cursor: pointer;  
+}
+
+.nav-menu li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 23px;        
+}
+
+.nav-menu li a:hover, .active {
+    color: #e8631c;
+}
+
+.nav-search {
+    display: flex;
+}
+
+.nav-search img {
+    width: 30px;
+    height: 30px;
+    
+}
+
+.nav-search input {
+    display:none
+}
+
+section.banner{
+    height: 695px;
+    background-image: url(../images/banner-img.jpg);
+    background-size: cover;
+    background-position: center; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 80px;
+      
+}
+
+section.banner h1 {
+    font-size:100px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+section.banner p {
+    width: 50%;
+    font-size:25px;
+    line-height: 40px;
+    color: #FFFFFF;
+}
+
+section.banner button {
+    margin-top: 40px;
+    width:320px;
+    height: 60px;
+    padding:10px;
+    background-color: #e8631c;   
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+}
+
+section.banner button:hover {
+    border: 2px solid #FFFFFF;
+}
+
+section.banner button a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 25px;    
+}
+
+section.banner button a, section.banner button a:visited {
+    color: #FFFFFF;
+}
+
+section.tour {
+    background-color: #e8631c;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px;
+    color: #FFFFFF;
+}
+
+section h3 {
+    font-size: 60px;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+
+section h5 {
+    font-size: 23px;    
+    font-weight: normal;
+    text-align: center; 
+    margin-bottom: 60px;   
+}
+
+section .card-area {
+    display: flex;
+    justify-content: space-between;    
+}
+
+
+section .tour-card {
+     width: 370px;     
+     background-color: #303030;        
+}
+
+section .tour-card img{
+    width: 100%;
+    height: auto;    
+}
+
+section .card-text {
+    padding: 10px;    
+}
+
+section .card-text h4 {
+    font-size:40px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+section .card-text p {
+    font-size:23px;
+    margin-bottom: 15px;        
+}
+
+section.pricing {
+    background-color: #303030;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 100px;
+    color: #FFFFFF;
+}
+
+.price-card {
+    width: 350px;
+    background-color: #e8631c;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.price-card img {
+    height:200px;
+    width: 70%;
+    margin-top: 20px;    
+}
+
+.price-card h4 {
+    margin-top: 20px;
+    text-transform: uppercase;    
+}
+
+.price-card a {
+    text-decoration: none;
+    display: block;
+    background-color: #303030;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: bold;
+    border: 2px solid #303030;
+}
+
+.price-card a, 
+.price-card a:visited {
+    color: #fff;
+}
+
+.price-card a:hover {
+    border: 2px solid #FFFFFF;
+}
+
+
+
+
+
+
+
+@media (max-width:1276px) {
+    section.banner {
+        justify-content: center;
+        align-items: center;
+        background-position: right;
+    }
+
+    section .card-area {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tour-card,
+    .price-card {
+        flex: 1;
+    }
+
+
+}
